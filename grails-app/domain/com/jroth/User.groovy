@@ -6,9 +6,9 @@ class User {
     String username
     String password
     boolean enabled = true
-//    boolean accountExpired
-//    boolean accountLocked
-//    boolean passwordExpired
+    boolean accountExpired
+    boolean accountLocked
+    boolean passwordExpired
 
     static constraints = {
         username blank: false, unique: true

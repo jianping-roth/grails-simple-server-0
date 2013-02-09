@@ -1,4 +1,6 @@
 import org.apache.commons.httpclient.HttpClient
+import org.apache.commons.httpclient.UsernamePasswordCredentials
+import org.apache.commons.httpclient.auth.AuthScope
 import org.apache.commons.httpclient.methods.DeleteMethod
 import org.apache.commons.httpclient.methods.GetMethod
 import org.apache.commons.httpclient.methods.PostMethod
@@ -11,6 +13,12 @@ final String url = "http://localhost:8080/simple-server/api/users"
 // get all users
 println ("Get all users ...")
 final HttpClient httpClient = new HttpClient()
+
+httpClient.getState().setCredentials(
+        new AuthScope("ipaddress", 443, "realm"),
+        new UsernamePasswordCredentials("admin", "pass")
+);
+
 GetMethod getMethod = new GetMethod(url)
 getMethod.addRequestHeader("Content-Type", "application/json")
 httpClient.executeMethod(getMethod);

@@ -2,9 +2,11 @@ package com.jroth.simpleserver.api
 
 import com.jroth.ApiException
 import grails.converters.JSON
+import grails.plugins.springsecurity.Secured
 import org.codehaus.groovy.grails.web.json.JSONObject
 import com.jroth.User
 
+@Secured(["ROLE_ADMIN"])
 class UserApiController {
     def userService
 
@@ -105,8 +107,7 @@ class UserApiController {
     }
 
     /**
-     * Deletes the user for the specified id
-     * @return
+     * Deletes the use. for the specified id
      */
     def delete() {
         try {
@@ -128,7 +129,7 @@ class UserApiController {
      */
     private Map toMap(User user) {
         return [uri: createLink([uri: "/api/users/${user.id}", absolute: true]), username: user.username,
-                password: user.password, enabled: user.enabled]
+                password: user.password, enabled: user.enabled, roles: user.authorities.authority ]
     }
 
     private getHttpCodeFromException(Exception e) {

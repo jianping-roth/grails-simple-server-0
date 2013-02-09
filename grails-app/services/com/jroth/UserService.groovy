@@ -28,7 +28,14 @@ class UserService {
                 throw new ApiException("user property ${it} must be present.", ApiException.ErrorCode.InvalidProperty)
             }
         }
-        new User(userProps).save()
+        User newUser = new User(userProps).save()
+
+        // handle roles
+        Role.findAllByAuthorityInList(userProps.roles?.authority ? userProps.roles?.authority : []).each {
+            new UserRole(user: newUser, role: it).save()
+        }
+
+        return newUser
     }
 
     /**
@@ -55,6 +62,16 @@ class UserService {
             }
 
             existing."${it}" = newValue
+        }
+
+        // delete the old roles
+        UserRole.findAllByUser(existing).each {
+            it.delete()
+        }
+
+        // handle roles
+        Role.findAllByAuthorityInList(newUserProps.roles ? newUserProps.roles : []).each {
+            new UserRole(user: existing, role: it).save()
         }
 
         return existing.save()

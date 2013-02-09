@@ -61,14 +61,19 @@ grails.hibernate.cache.queries = true
 
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.jroth.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.jroth.UserRole'
-grails.plugins.springsecurity.authority.className = 'com.genologics.jroth.Role'
+grails.plugins.springsecurity.authority.className = 'com.jroth.Role'
 grails.plugins.springsecurity.successHandler.defaultTargetUrl = '/home'
-grails.plugins.springsecurity.userBasicAuth=true
 
-//grails.plugins.springsecurity.filterChain.chainMap = [
-//        'api/**': 'JOINED_FILTER,-exceptionTranslationFilter',
-//        '**': 'JOINED_FILTER,-basicAuthenticationFilter,-basicExceptionTranslationFilter'
-//]
+//Enable Basic Auth Filter
+grails.plugins.springsecurity.useBasicAuth = true
+grails.plugins.springsecurity.basic.realmName = "JSON API Example"
+//Exclude normal controllers from basic auth filter. Just the JSON API is included
+grails.plugins.springsecurity.filterChain.chainMap = [
+        '/api/**': 'JOINED_FILTERS,-exceptionTranslationFilter',
+        '/**': 'JOINED_FILTERS,-basicAuthenticationFilter,-basicExceptionTranslationFilter'
+]
+
+grails.plugins.springsecurity.userBasicAuth=true
 
 // set per-environment serverURL stem for creating absolute links
 environments {

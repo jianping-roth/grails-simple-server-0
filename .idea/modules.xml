@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/grails-simple-server.iml" filepath="$PROJECT_DIR$/grails-simple-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/grails-simple-server-grailsPlugins.iml" filepath="$PROJECT_DIR$/grails-simple-server-grailsPlugins.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-server.iml" filepath="$PROJECT_DIR$/simple-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/simple-server-grailsPlugins.iml" filepath="$PROJECT_DIR$/simple-server-grailsPlugins.iml" />
     </modules>
