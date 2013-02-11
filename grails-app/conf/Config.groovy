@@ -59,6 +59,15 @@ grails.exceptionresolver.params.exclude = ['password']
 // enable query caching by default
 grails.hibernate.cache.queries = true
 
+grails.plugins.springsecurity.interceptUrlMap = [
+        '/css/**':           ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/images/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/login/**':         ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/logout/**':        ['IS_AUTHENTICATED_ANONYMOUSLY'],
+        '/api/**':           ['ROLE_ADMIN'],
+        '/**':               ['IS_AUTHENTICATED_FULLY','IS_AUTHENTICATED_REMEMBERED']
+]
+
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.jroth.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.jroth.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.jroth.Role'

@@ -33,11 +33,11 @@
     <file path="$USER_HOME$/IdeaProjects/simple-server/grails-app/conf/UrlMappings.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360373167249" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/simple-server/application.properties" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360373167249" ignored="false" />
     <file path="$USER_HOME$/IdeaProjects/simple-server/grails-app/controllers/com/jroth/simpleserver/api/UserApiController.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360373167249" ignored="false" />
-    <file path="$PROJECT_DIR$/test/unit/com/jroth/simpleserver/api/RoleApiControllerTests.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360393178693" ignored="false" />
     <file path="/HomeControllerTests.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360396030013" ignored="false" />
     <file path="/LoginControllerTests.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360396046092" ignored="false" />
-    <file path="/Dummy.txt" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360396264907" ignored="false" />
+    <file path="/Dummy.txt" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360437954901" ignored="false" />
     <file path="/.gitignore" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360399099447" ignored="false" />
+    <file path="F:/IdeaProjects/simple-server/grails-app/conf/BuildConfig.groovy" changelist="9c8cf208-80d3-4482-b6cb-60b2efdd5081" time="1360399353343" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +53,6 @@
   </component>
   <component name="DebuggerManager">
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -88,6 +87,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -97,28 +97,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BootStrap.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="18" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LoginController.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LoginController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="-4.4347825">
+            <state line="6" column="23" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LogoutController.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LogoutController.groovy">
+      <file leaf-file-name="PublicController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/PublicController.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="60" selection-start="91" selection-end="91" vertical-scroll-proportion="-0.73913044">
+            <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserApiController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/api/UserApiController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="34" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/HomeController.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,7 +136,34 @@
       <file leaf-file-name="UserTests.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/UserTests.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="-6.652174">
+            <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleApiControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/api/RoleApiControllerTests.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PublicControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/PublicControllerTests.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RoleTests.groovy" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/RoleTests.groovy">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -136,57 +172,18 @@
       <file leaf-file-name="LoginControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/LoginControllerTests.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="47" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.9130435">
+            <state line="10" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="User.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/grails-app/domain/com/jroth/User.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="136" selection-end="216" vertical-scroll-proportion="-1.36">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitattributes" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.gitattributes">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".gitignore" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.29423076">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeControllerTests.groovy" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="HomeControllerTests.groovy" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/HomeControllerTests.groovy">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="16" selection-start="301" selection-end="301" vertical-scroll-proportion="-11.086957">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestServices.groovy" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/groovy/TestServices.groovy">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="86" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
+            <state line="17" column="24" selection-start="302" selection-end="302" vertical-scroll-proportion="0.35945272">
               <folding>
-                <element signature="e#0#47#0" expanded="true" />
+                <element signature="e#34#60#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -210,8 +207,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/groovy/com/jroth/TestPost.groovy" />
-        <option value="$PROJECT_DIR$/test/unit/com/jroth/simpleserver/UserControllerTests.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/TestGet.groovy" />
         <option value="$PROJECT_DIR$/grails-app/conf/BuildConfig.groovy" />
         <option value="$PROJECT_DIR$/src/groovy/TestServices.groovy" />
@@ -223,9 +218,11 @@
         <option value="$PROJECT_DIR$/grails-app/conf/BootStrap.groovy" />
         <option value="$PROJECT_DIR$/test/unit/com/jroth/simpleserver/HomeControllerTests.groovy" />
         <option value="$PROJECT_DIR$/test/unit/com/jroth/simpleserver/LoginControllerTests.groovy" />
-        <option value="$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LogoutController.groovy" />
         <option value="$PROJECT_DIR$/grails-app/domain/com/jroth/User.groovy" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LogoutController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LoginController.groovy" />
+        <option value="$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/PublicController.groovy" />
       </list>
     </option>
   </component>
@@ -263,6 +260,17 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple-server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -291,27 +299,6 @@
             <PATH_ELEMENT USER_OBJECT="grails-simple-server">
               <option name="myItemId" value="" />
               <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grails-simple-server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -345,7 +332,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Grails.Grails:simple-server">
+  <component name="RunManager" selected="Groovy.TestServices">
     <configuration default="false" name="TestServices" type="GroovyScriptRunConfiguration" factoryName="Groovy" temporary="true">
       <module name="simple-server" />
       <setting name="path" value="$PROJECT_DIR$/src/groovy/TestServices.groovy" />
@@ -525,8 +512,8 @@
       <item index="0" class="java.lang.String" itemvalue="Grails.Grails:simple-server" />
       <item index="1" class="java.lang.String" itemvalue="Grails.clean" />
       <item index="2" class="java.lang.String" itemvalue="Remote.server" />
-      <item index="3" class="java.lang.String" itemvalue="Groovy.TestServices" />
-      <item index="4" class="java.lang.String" itemvalue="Grails.Grails:grails-simple-server" />
+      <item index="3" class="java.lang.String" itemvalue="Grails.Grails:grails-simple-server" />
+      <item index="4" class="java.lang.String" itemvalue="Groovy.TestServices" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -573,7 +560,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -581,27 +568,27 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3496583" sideWeight="0.17662753" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.42529348" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35763097" sideWeight="0.4914621" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Grails View" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.6708428" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5736393" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32915717" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4044824" sideWeight="0.6503417" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3496583" sideWeight="0.8196371" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4044824" sideWeight="0.6708428" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3496583" sideWeight="0.8196371" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35763097" sideWeight="0.4914621" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32460135" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32915717" sideWeight="0.5709712" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -669,123 +656,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/api/UserApiController.groovy">
+    <entry file="file://$PROJECT_DIR$/src/groovy/TestServices.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="218" selection-end="242" vertical-scroll-proportion="-2.9565217">
-          <folding />
-        </state>
+        <state line="11" column="86" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/HomeController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="6" selection-start="108" selection-end="108" vertical-scroll-proportion="-3.6956522">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/PublicController.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="6" selection-start="344" selection-end="344" vertical-scroll-proportion="-8.869565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.grails/2.0.0/projects/simple-server/plugins/spring-security-core-1.2.7.2/src/java/org/codehaus/groovy/grails/plugins/springsecurity/SpringSecurityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="101" selection-start="2604" selection-end="2604" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/services/com/jroth/UserService.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="77" selection-start="2581" selection-end="2581" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/jroth/UserRole.groovy">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="49" selection-start="490" selection-end="490" vertical-scroll-proportion="3.18">
-          <folding />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/jroth/User.groovy">
       <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/conf/BootStrap.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="18" selection-start="1429" selection-end="1429" vertical-scroll-proportion="0.0">
+        <state line="8" column="0" selection-start="136" selection-end="216" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/UserTests.groovy">
+    <entry file="file://$PROJECT_DIR$/.gitattributes">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="-6.652174">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/HomeControllerTests.groovy">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="301" selection-end="301" vertical-scroll-proportion="-11.086957">
+        <state line="9" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/grails-20/grails-2.0.0/src/grails-plugin-testing-2.0.0-sources.jar!/grails/test/mixin/TestFor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="18" selection-start="1203" selection-end="1203" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LogoutController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="65" selection-start="31" selection-end="31" vertical-scroll-proportion="-0.73913044">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LoginController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="26" selection-start="136" selection-end="136" vertical-scroll-proportion="-4.4347825">
+        <state line="6" column="23" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/LogoutController.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/PublicController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="60" selection-start="91" selection-end="91" vertical-scroll-proportion="-0.73913044">
+        <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/groovy/TestServices.groovy">
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/api/UserApiController.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="86" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state line="4" column="34" selection-start="130" selection-end="130" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grails-app/controllers/com/jroth/simpleserver/HomeController.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="20" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/UserTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/api/RoleApiControllerTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="198" selection-end="198" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/PublicControllerTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/RoleTests.groovy">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="9" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/LoginControllerTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="47" selection-start="184" selection-end="184" vertical-scroll-proportion="-5.9130435">
+        <state line="10" column="9" selection-start="194" selection-end="194" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grails-app/domain/com/jroth/User.groovy">
+    <entry file="file://$PROJECT_DIR$/test/unit/com/jroth/simpleserver/HomeControllerTests.groovy">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="136" selection-end="216" vertical-scroll-proportion="-1.36">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="org.jetbrains.plugins.grails.perspectives.DomainClassesRelationsEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitattributes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="7" selection-start="99" selection-end="99" vertical-scroll-proportion="0.29423076">
-          <folding />
+        <state line="17" column="24" selection-start="302" selection-end="302" vertical-scroll-proportion="0.35945272">
+          <folding>
+            <element signature="e#34#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
