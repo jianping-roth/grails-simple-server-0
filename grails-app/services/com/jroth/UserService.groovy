@@ -31,8 +31,14 @@ class UserService {
         User newUser = new User(userProps).save()
 
         // handle roles
-        Role.findAllByAuthorityInList(userProps.roles?.authority ? userProps.roles?.authority : []).each {
-            new UserRole(user: newUser, role: it).save()
+        List<Role> roleList = Role.list()
+        (userProps.roles? userProps.roles : []).each {
+            def found = roleList.find { role -> role.authority == it }
+            if (found) {
+                new UserRole(user: newUser, role: found).save()
+            } else {
+                throw ApiException("Invalid user role: ${it}", ApiException.ErrorCode.InvalidProperty)
+            }
         }
 
         return newUser
@@ -55,13 +61,13 @@ class UserService {
             throw new ApiException("The username is already used.", ApiException.ErrorCode.InvalidProperty)
         }
 
-        ['username', 'password','enabled'].each {
-            def newValue = newUserProps."${it}"
-            if (newValue == null || newValue.toString().isEmpty()) {
-                throw new ApiException("user property ${it} must be present.", ApiException.ErrorCode.InvalidProperty)
+        [username: true, password:true, enabled: false].each { key, mandatory ->
+            def newValue = newUserProps."${key}"
+            if (mandatory && (newValue == null || newValue.toString().isEmpty())) {
+                throw new ApiException("User property '${key}' must be present.", ApiException.ErrorCode.InvalidProperty)
             }
 
-            existing."${it}" = newValue
+            existing."${key}" = newValue
         }
 
         // delete the old roles
@@ -94,7 +100,7 @@ class UserService {
      * @throws ApiException if the username is null or the user does not exist.
      */
     User findAndEnsureUserExists(Long id) {
-        if (!id) {
+        if (id == null) {
             throw new ApiException("User id cannot be null.", ApiException.ErrorCode.InvalidProperty)
         }
 

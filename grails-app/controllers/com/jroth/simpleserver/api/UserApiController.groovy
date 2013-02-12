@@ -132,6 +132,11 @@ class UserApiController {
                 password: user.password, enabled: user.enabled, roles: user.authorities.authority ]
     }
 
+    /**
+     * Compute the Http Status based on the exception.
+     * @param e the exception encountered.
+     * @return the HttpStatus code for the exception.
+     */
     private getHttpCodeFromException(Exception e) {
         if (e instanceof ApiException) {
             switch (((ApiException) e).code){
