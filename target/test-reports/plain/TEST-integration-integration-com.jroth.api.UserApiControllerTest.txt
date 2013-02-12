@@ -1,0 +1,23 @@
+Testsuite: com.jroth.api.UserApiControllerTest
+Tests run: 9, Failures: 0, Errors: 0, Time elapsed: 15.506 sec
+------------- Standard Error -----------------
+--Output from testListUsers--
+--Output from testCreateUser--
+--Output from testUpdateUser_invalidUserId--
+--Output from testUpdateUser_happyPath--
+--Output from testReadUserDetails_invalidUserId--
+--Output from testReadUserDetails_happyPath--
+--Output from testUpdateUser_missingPassword--
+--Output from testUpdateUser_missingUsername--
+--Output from testUpdateUser_duplicatedUsername--
+------------- ---------------- ---------------
+
+Testcase: testListUsers took 0.818 sec
+Testcase: testCreateUser took 0.141 sec
+Testcase: testUpdateUser_invalidUserId took 0.11 sec
+Testcase: testUpdateUser_happyPath took 14.015 sec
+Testcase: testReadUserDetails_invalidUserId took 0.07 sec
+Testcase: testReadUserDetails_happyPath took 0.08 sec
+Testcase: testUpdateUser_missingPassword took 0.076 sec
+Testcase: testUpdateUser_missingUsername took 0.076 sec
+Testcase: testUpdateUser_duplicatedUsername took 0.081 sec

@@ -1,0 +1,9 @@
+--Output from testListUsers--
+--Output from testCreateUser--
+--Output from testUpdateUser_invalidUserId--
+--Output from testUpdateUser_happyPath--
+--Output from testReadUserDetails_invalidUserId--
+--Output from testReadUserDetails_happyPath--
+--Output from testUpdateUser_missingPassword--
+--Output from testUpdateUser_missingUsername--
+--Output from testUpdateUser_duplicatedUsername--

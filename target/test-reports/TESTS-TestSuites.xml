@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+  <testsuite errors="0" failures="0" hostname="Jim-PC" id="0" name="UserApiControllerTest" package="com.jroth.api" tests="9" time="15.506" timestamp="2013-02-10T04:34:04">
+      <properties />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testListUsers" time="0.818" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testCreateUser" time="0.141" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testUpdateUser_invalidUserId" time="0.11" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testUpdateUser_happyPath" time="14.015" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testReadUserDetails_invalidUserId" time="0.07" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testReadUserDetails_happyPath" time="0.08" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testUpdateUser_missingPassword" time="0.076" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testUpdateUser_missingUsername" time="0.076" />
+
+      <testcase classname="com.jroth.api.UserApiControllerTest" name="testUpdateUser_duplicatedUsername" time="0.081" />
+
+      <system-out><![CDATA[]]></system-out>
+
+      <system-err><![CDATA[--Output from testListUsers--
+--Output from testCreateUser--
+--Output from testUpdateUser_invalidUserId--
+--Output from testUpdateUser_happyPath--
+--Output from testReadUserDetails_invalidUserId--
+--Output from testReadUserDetails_happyPath--
+--Output from testUpdateUser_missingPassword--
+--Output from testUpdateUser_missingUsername--
+--Output from testUpdateUser_duplicatedUsername--
+]]></system-err>
+
+  </testsuite>
+</testsuites>
