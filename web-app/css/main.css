@@ -27,7 +27,6 @@ body {
     margin: 10px auto;
 }
 
-
 .login-page, .error-page {
     font-family: 'Arial' !important;
     padding-top: 30px;
@@ -133,9 +132,10 @@ a.hover {
     color: #006dba;
 }
 
-table {
+#initial-page table {
     border-collapse: separate;
     border-color: gray;
+    border-spacing: 0;
 }
 
 th  {
@@ -153,4 +153,33 @@ td {
     color: #039;
     display: table-cell;
     padding: 10px 8px;
+}
+
+.who {
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+.tweets  {
+    text-align: left;
+}
+
+.tweet  {
+    text-align: left;
+    margin: 5px;
+    height: 50px;
+}
+
+.when  {
+    font-size: 8px;
+}
+
+.tweet-details {
+    margin-left: 60px;
+    padding: 2px;
+}
+
+.tweets h4, .tweet-error {
+    text-align: center;
 }

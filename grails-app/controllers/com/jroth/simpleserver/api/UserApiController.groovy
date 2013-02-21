@@ -107,7 +107,7 @@ class UserApiController {
     }
 
     /**
-     * Deletes the use. for the specified id
+     * Deletes the user. for the specified id
      */
     def delete() {
         try {
